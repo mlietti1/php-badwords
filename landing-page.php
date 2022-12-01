@@ -6,6 +6,7 @@ $trimmed_par = trim($paragraph);
 $length = strlen($trimmed_par);
 $new_paragraph = str_replace( $badword, "***", $paragraph);
 $new_length = strlen($new_paragraph);
+$array = explode(',', $paragraph);
 
 ?>
 
@@ -28,5 +29,6 @@ $new_length = strlen($new_paragraph);
     <?php echo $new_paragraph ?>
   </p>
   <p>Length: <?php echo $new_length ?> </p>
+  <p>ARRAY PROVA: <?php var_dump($array) ?></p>
 </body>
 </html>
